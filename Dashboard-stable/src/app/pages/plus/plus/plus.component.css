@@ -1,0 +1,16 @@
+.row .card {
+  margin: 15px;
+}
+
+.disclaimer {
+  color: var(--muted);
+  font-size: 8px;
+}
+
+zippy {
+  margin: 15px 0;
+}
+
+.plus {
+  max-width: 256px;
+}

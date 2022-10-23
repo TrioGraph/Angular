@@ -1,0 +1,33 @@
+<navbar></navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1 class="display-3">2PG+</h1>
+      <p class="lead">Unlock epic perks, and support 2PG's development!</p>
+      <p *ngIf="userService.savedUser"
+        class="text-info">You have <em>{{ plusDaysLeft | number }} days</em> left of 2PG+.</p>
+    </div>
+    <div class="col-sm-6">
+      <img class="float float-right plus" src="assets/img/2pg-plus-avatar-transparent.svg" alt="2PG Plus Transparent Avatar">
+    </div>
+  </div>
+  <section
+    id="benefits"
+    class="row py-5">
+    <app-plus-card
+      duration="1 Month"
+      price="2.99"
+      (checkout)="checkout(0)"
+      class="col-sm-4"></app-plus-card>
+    <app-plus-card
+      duration="3 Months"
+      price="4.99"
+      (checkout)="checkout(1)"
+      class="col-sm-4"></app-plus-card>
+      <app-plus-card
+      duration="1 Year"
+      price="14.99"
+      (checkout)="checkout(2)"
+      class="col-sm-4"></app-plus-card>
+  </section>
+</div>
